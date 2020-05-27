@@ -1,0 +1,16 @@
+*.pyc
+*.pyo
+__pycache__/*
+*.log
+ipp_nodes.txt
+*/ipp_nodes.txt
+.DS_Store
+quicksilver_config.json
+box2d_gym
+results/
+.ipynb_checkpoints/*
+.vscode/*
+checkpoints/*
+logs/*
+.env
+.fossa.yml
