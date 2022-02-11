@@ -21,7 +21,7 @@ class AntObstaclesBigEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         reward = - np.sqrt(np.sum(np.square(self.data.qpos[:2] - self.goal)))
         done = False
         ob = self._get_obs()
-        return ob, reward, done, dict(bc=self.data.qpos[:2],
+        return ob, reward, done, dict(bc=np.array(self.data.qpos[:2]),
                                       x_pos=self.data.qpos[0])
 
     def _get_obs(self):
